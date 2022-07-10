@@ -10,7 +10,9 @@ app.get('/',function(req,res){
   res.sendFile(__dirname+"/index.html")
 });
 
+
+app.get('/greet',function(req,res){
+  res.send("hello");
+})
+
 app.listen(process.env.PORT || 5000);
-// app.listen(3000,function(){
-//   console.log("server started at port 3000");
-// });
